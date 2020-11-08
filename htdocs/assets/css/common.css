@@ -846,30 +846,6 @@ a:hover{
 .type02{
   background:#b75929;
 }
-.optical_bnr01{
-  background:url("../images/product-optical/optical_bnr01.jpg") no-repeat;
-  background-position:100% 60%;
-  background-size:cover
-}
-.optical_bnr02{
-  background:url("../images/product-optical/optical_bnr02.jpg") center
-    no-repeat;
-  background-position:100% 35%;
-  background-size:cover;
-}
-.optical__list{
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-flex-wrap:wrap;
-      -ms-flex-wrap:wrap;
-          flex-wrap:wrap;
-  margin:0 -1.5rem;
-}
-.optical__item{
-  width:25%
-}
 .pagenation{
   display:-webkit-box;
   display:-webkit-flex;
@@ -907,8 +883,10 @@ a:hover{
 .pagenation a,
   .pagenation span{
     display:block;
+    width:100%;
     padding:1rem 0;
-    color:#000
+    color:#000;
+    text-align:center
   }
 .pagenation .selected{
     background:#000
@@ -928,6 +906,30 @@ a:hover{
 .pagenation .next{
     background-color:#f2f2f2;
   }
+.optical_bnr01{
+  background:url("../images/product-optical/optical_bnr01.jpg") no-repeat;
+  background-position:100% 60%;
+  background-size:cover
+}
+.optical_bnr02{
+  background:url("../images/product-optical/optical_bnr02.jpg") center
+    no-repeat;
+  background-position:100% 35%;
+  background-size:cover;
+}
+.optical__list{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex-wrap:wrap;
+      -ms-flex-wrap:wrap;
+          flex-wrap:wrap;
+  margin:0 -1.5rem;
+}
+.optical__item{
+  width:25%
+}
 .sun_bnr01{
   background:url("../images/product-sunglasses/sun_bnr01.jpg") no-repeat;
   background-position:50% 51%;
@@ -1208,9 +1210,6 @@ a:hover{
 .product__detail span{
       font-size:1.6rem
   }
-.optical__item{
-    width:100%
-}
 .pagenation{
     max-width:241px;
     font-size:1.1rem
@@ -1223,6 +1222,9 @@ a:hover{
   .pagenation .prev{
       font-size:1.2rem
   }
+.optical__item{
+    width:100%
+}
 .sun__item{
     width:100%
 }
