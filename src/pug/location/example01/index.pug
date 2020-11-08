@@ -1,0 +1,53 @@
+extends /_include/_layout-base--2nd.pug
+
+
+block var
+  -
+    var page = {
+      url : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week03/location/example01',
+      title : '第三週 - RWD 網站 Location example01 | leolee',
+      description : 'Location example01',
+      keywords : '',
+      htmlClass: '',
+      ogp: {
+        image : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week03/assets/images/og_image.jpg'
+      },
+    };
+
+
+block append css
+block content
+    main.location
+      .topbanner__mv
+        .container
+          .topbanner__title
+            h1 門市據點
+              img(src="../../assets/images/location/icon-location.svg", alt="")
+
+      .container
+        .location__select
+            span 選擇分店
+            select#branch(name="branch")
+              option(value="" disabled selected) 請選擇分店
+              option(value="台北中山旗艦店") 台北中山旗艦店
+              option(value="台北館前店") 台北館前店
+              option(value="台北信義店") 台北信義店
+              option(value="台北文山店") 台北文山店
+
+      section.location__branch#taipei--shop01
+        .container
+
+          .location__branch__wrap
+            .location__main__item
+              span.location__img.locate01
+              .location__card
+                h2 台北中山旗艦店
+                .card__detail
+                  p.tel--icon 電話：(02)000-1234
+                  p.time--icon 營業時間：10:00-21:00
+                  p.nav--icon 地址：台北市中山區南京東路25巷2-1號
+
+            .location__map
+              .
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.465378238844!2d121.53571001537902!3d25.05221114371426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf93d4d97b%3A0xa1e26471ae5697b8!2zMTA0OTHlj7DngaPlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2sjp!4v1604850598074!5m2!1szh-TW!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>

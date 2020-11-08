@@ -1,0 +1,282 @@
+.topbanner__mv {
+  position: relative;
+  height: 304px;
+  background: url("../images/location/bg.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  @media (--tb) {
+    background: url("../images/location/bg.jpg") no-repeat;
+    background-position: 2% 68%;
+  }
+  @media (--sp) {
+    height: 143px;
+    background: url("../images/location/bg_sp.jpg") no-repeat;
+    background-position: 0 86%;
+    background-size: cover;
+  }
+}
+.topbanner__title {
+  position: absolute;
+  bottom: 0;
+  & h1 {
+    display: flex;
+    font-size: 6.4rem;
+    line-height: 1.4;
+    @media (--tb) {
+      font-size: 4.8rem;
+    }
+    @media (--sp) {
+      font-size: 2.8rem;
+    }
+  }
+  & img {
+    margin-left: 2.4rem;
+    @media (--tb) {
+      width: 31px;
+      margin-left: 1.6rem;
+    }
+    @media (--sp) {
+      width: 17px;
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.location__select {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0 3.2rem;
+  @media (--tb) {
+    padding: 0.8rem 0 2.4rem;
+  }
+  @media (--sp) {
+    padding: 0.8rem 0 2rem;
+  }
+  & span {
+    font-size: 2.4rem;
+    @media (--tb) {
+      font-size: 1.6rem;
+    }
+    @media (--sp) {
+      width: 77px;
+      font-size: 1.4rem;
+    }
+  }
+  & select {
+    width: 324px;
+    margin-left: 2rem;
+    padding: 1rem 1.9rem;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1.8rem;
+    background: transparent;
+    border: 1px solid #ced4da;
+    @media (--tb) {
+      padding: 1.2rem 1.6rem;
+      font-size: 1.6rem;
+    }
+    @media (--sp) {
+      flex: 1 1 100%;
+      margin-left: 1.2rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.location__main,
+.location__branch {
+  padding-bottom: 27rem;
+  @media (--tb) {
+    padding-bottom: 8.4rem;
+  }
+  @media (--sp) {
+    padding-bottom: 4rem;
+  }
+}
+
+.location__main__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
+}
+
+.location__main__item {
+  width: 33.333%;
+  padding: 0 1.5rem;
+  padding-bottom: 3.2rem;
+  @media (--tb) {
+    width: 50%;
+    padding-bottom: 2rem;
+  }
+  @media (--sp) {
+    width: 100%;
+    padding-bottom: 1.6rem;
+  }
+  & img {
+    width: 100%;
+    @media (--tb) {
+      flex: 1 1 100%;
+      width: 50%;
+      max-height: 164px;
+    }
+  }
+}
+
+.location__card {
+  border: 1px solid #00000020;
+  & h2 {
+    padding: 1.2rem 2.4rem;
+    font-size: 2.4rem;
+    @media (--sptb) {
+      padding: 0.8rem 1.6rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.card__detail {
+  padding: 2.1rem 2.4rem;
+  font-size: 2rem;
+  border-top: 1px solid #00000020;
+  @media (--sptb) {
+    padding: 1.7rem 1.6rem;
+    font-size: 1.4rem;
+  }
+  & p {
+    position: relative;
+    padding-bottom: 0.8rem;
+    padding-left: 3rem;
+  }
+}
+.detail__btn {
+  font-size: 1.9rem;
+  background: #000;
+  @media (--sptb) {
+    font-size: 1.4rem;
+  }
+  & a {
+    display: block;
+    padding: 2rem 0;
+    text-align: center;
+    @media (--sptb) {
+      padding: 1.6rem 0;
+    }
+  }
+}
+
+.tel--icon::before {
+  position: absolute;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/location/icon-phone-black.svg") no-repeat;
+  transform: translate(-10%, 8%) scale(0.8);
+  content: "";
+  content: "";
+}
+.time--icon::before {
+  position: absolute;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/location/icon-clock-black.svg") no-repeat;
+  transform: translate(-10%, 8%) scale(0.8);
+  content: "";
+  content: "";
+}
+.nav--icon::before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/location/icon-map.svg) no-repeat;
+  transform: translate(-9%, 0%) scale(0.8);
+  content: "";
+}
+
+/* branch */
+
+.location__branch__wrap {
+  display: flex;
+  @media (--sptb) {
+    display: block;
+  }
+}
+.location__branch__wrap {
+  & .location__main__item {
+    width: 41%;
+    max-width: 445px;
+    padding: 0;
+    @media (--tb) {
+      display: flex;
+      align-items: center;
+    }
+    @media (--sptb) {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  & .location__card {
+    @media (--tb) {
+      flex: 1 1 100%;
+      width: 100%;
+      margin: 0.6rem 0;
+      margin-left: 3rem;
+    }
+  }
+  & .location__img {
+    @media (--tb) {
+      width: 50%;
+    }
+  }
+}
+.location__map {
+  width: 59%;
+  padding-left: 3rem;
+  @media (--sptb) {
+    width: 100%;
+    height: 465px;
+    padding-top: 3.2rem;
+    padding-left: 0;
+  }
+  @media (--sp) {
+    height: 227px;
+    padding-top: 1.6rem;
+  }
+}
+
+.location__img {
+  display: block;
+  height: 224px;
+  @media (--sptb) {
+    height: 164px;
+  }
+}
+.locate01 {
+  background: url(../images/location/locate01.jpg) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.locate02 {
+  background: url(../images/location/locate02.jpg) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.locate03 {
+  background: url(../images/location/locate03.jpg) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.locate04 {
+  background: url(../images/location/locate04.jpg) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.locate05 {
+  background: url(../images/location/locate05.jpg) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}

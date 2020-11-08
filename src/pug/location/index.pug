@@ -1,0 +1,95 @@
+extends /_include/_layout-base.pug
+
+
+block var
+  -
+    var page = {
+      url : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week03/location',
+      title : '第三週 - RWD 網站 Location | leolee',
+      description : 'Location',
+      keywords : '',
+      htmlClass: '',
+      ogp: {
+        image : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week03/assets/images/og_image.jpg'
+      },
+    };
+
+
+block append css
+block content
+    main.location
+      .topbanner__mv
+        .container
+          .topbanner__title
+            h1 門市據點
+              img(src="../assets/images/location/icon-location.svg", alt="")
+
+      .container
+        .location__select
+          span 選擇地區
+          select#zone(name="zone")
+            option(value="" disabled selected) 請選擇地區
+            option(value="台北市") 台北市
+            option(value="新北市") 新北市
+            option(value="新竹市") 新竹市
+            option(value="高雄市") 高雄市
+
+      section.location__main#taipei
+        .container
+
+          ul.location__main__list
+
+            li.location__main__item
+              span.location__img.locate01
+              .location__card
+                h2 台北中山旗艦店
+                .card__detail
+                  p.tel--icon 電話：(02)000-1234
+                  p.time--icon 營業時間：10:00-21:00
+                  p.nav--icon 地址：台北市中山區南京東路25巷2-1號
+              .detail__btn
+                a(href="./example01") 詳細資訊
+
+            li.location__main__item
+              span.location__img.locate02
+              .location__card
+                h2 台北中山旗艦店
+                .card__detail
+                  p.tel--icon 電話：(02)000-1234
+                  p.time--icon 營業時間：10:00-21:00
+                  p.nav--icon 地址：台北市中山區南京東路25巷2-1號
+              .detail__btn
+                a(href="./example01") 詳細資訊
+
+            li.location__main__item
+              span.location__img.locate03
+              .location__card
+                h2 台北中山旗艦店
+                .card__detail
+                  p.tel--icon 電話：(02)000-1234
+                  p.time--icon 營業時間：10:00-21:00
+                  p.nav--icon 地址：台北市中山區南京東路25巷2-1號
+              .detail__btn
+                a(href="./example01") 詳細資訊
+
+            li.location__main__item
+              span.location__img.locate04
+              .location__card
+                h2 台北中山旗艦店
+                .card__detail
+                  p.tel--icon 電話：(02)000-1234
+                  p.time--icon 營業時間：10:00-21:00
+                  p.nav--icon 地址：台北市中山區南京東路25巷2-1號
+              .detail__btn
+                a(href="./example01") 詳細資訊
+
+            li.location__main__item
+              span.location__img.locate05
+              .location__card
+                h2 台北中山旗艦店
+                .card__detail
+                  p.tel--icon 電話：(02)000-1234
+                  p.time--icon 營業時間：10:00-21:00
+                  p.nav--icon 地址：台北市中山區南京東路25巷2-1號
+              .detail__btn
+                a(href="./example01") 詳細資訊
