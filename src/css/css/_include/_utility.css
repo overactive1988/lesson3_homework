@@ -1,0 +1,12 @@
+.u-spn {
+  display: block;
+  @media (--sp) {
+    display: none;
+  }
+}
+.u-spb {
+  display: none;
+  @media (--sp) {
+    display: block;
+  }
+}

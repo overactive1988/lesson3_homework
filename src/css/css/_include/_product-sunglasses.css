@@ -1,0 +1,44 @@
+.sun_bnr01 {
+  background: url("../images/product-sunglasses/sun_bnr01.jpg") no-repeat;
+  background-position: 50% 51%;
+  background-size: cover;
+  @media (--tb) {
+    background-position: 50% 68%;
+  }
+}
+.sun_bnr02 {
+  background: url("../images/product-sunglasses/sun_bnr02.jpg") center no-repeat;
+  background-position: 100% 25%;
+  background-size: cover;
+  @media (--tb) {
+    background-position: 100% 12%;
+  }
+}
+
+.sun__list {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -1.5rem;
+}
+.sun__item {
+  width: 33.333%;
+  @media (--tb) {
+    width: 50%;
+  }
+  @media (--sp) {
+    width: 100%;
+  }
+  & .product__detail {
+    display: block;
+    padding-bottom: 1rem;
+    @media (--sptb) {
+      display: flex;
+    }
+    & h2 {
+      display: block;
+      @media (--sptb) {
+        display: inline-block;
+      }
+    }
+  }
+}
