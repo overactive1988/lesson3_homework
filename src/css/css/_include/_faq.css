@@ -1,0 +1,60 @@
+.topbanner__title {
+  & .qa--icon {
+    width: 58px;
+    @media (--tb) {
+      width: 48px;
+    }
+    @media (--sp) {
+      width: 24px;
+    }
+  }
+}
+
+.faq__main {
+  padding-top: 8rem;
+  padding-bottom: 26.4rem;
+  @media (--tb) {
+    padding-top: 4rem;
+    padding-bottom: 6.4rem;
+  }
+  @media (--sp) {
+    padding-top: 2.4rem;
+    padding-bottom: 3.6rem;
+  }
+}
+.faq__section__title {
+  padding-bottom: 3.6rem;
+  font-size: 3.2rem;
+  @media (--sp) {
+    padding-bottom: 1.2rem;
+    font-size: 2rem;
+  }
+}
+.qa {
+  & dl {
+    padding-bottom: 4rem;
+    @media (--sp) {
+      padding-bottom: 2rem;
+    }
+  }
+  & dt {
+    padding-bottom: 1.6rem;
+    font-weight: bold;
+    font-size: 2rem;
+    @media (--sp) {
+      font-size: 1.6rem;
+    }
+  }
+  & dd {
+    max-width: 920px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    @media (--tb) {
+      max-width: 630px;
+      margin: 0 0 0 auto;
+    }
+    @media (--sp) {
+      font-size: 1.4rem;
+    }
+  }
+}
