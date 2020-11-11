@@ -10,3 +10,10 @@
     display: block;
   }
 }
+.u-tc {
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.u-en {
+  font-family: Roboto, sans-serif;
+}

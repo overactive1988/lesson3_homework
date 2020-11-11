@@ -51,31 +51,10 @@
         padding-bottom: 0;
       }
     }
-    &:last-child {
-      @media (--tb) {
-        & img {
-          width: 32px;
-          margin-right: 10px;
-        }
-      }
-    }
   }
   & a {
     display: inline-flex;
     align-items: center;
-
-    & img {
-      width: 48px;
-      margin-right: 20px;
-      @media (--tb) {
-        width: 24px;
-        margin-right: 15px;
-      }
-      @media (--sp) {
-        width: 20px;
-        margin-right: 5px;
-      }
-    }
   }
 }
 
@@ -94,9 +73,6 @@
     }
     @media (--sptb) {
       padding-right: 2.4rem;
-      & img {
-        max-width: 24px;
-      }
     }
   }
 }

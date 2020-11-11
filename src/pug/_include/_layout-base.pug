@@ -16,10 +16,13 @@ html(lang="zh-TW")
 
       meta(name="robots" content="index,follow")
       meta(name="format-detection" content="telephone=no")
-      link(rel="shortcut icon" href="./favicon.ico")
+      link(rel="shortcut icon" href="../favicon.ico")
       //- font style
       .
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
 
       block css
         link(rel="stylesheet" href="../assets/css/common.min.css")
@@ -43,45 +46,46 @@ html(lang="zh-TW")
     footer.bg-primary
       .container
         .footer__header
-          ul.footer__link
-            li
-              a(href="../") 首頁
-            li
-              a(href="../product-sunglasses") 系列鏡框
-            li
-              a(href="../location") 門市據點
-            li
-              a(href="../blog") 部落格
-            li
-              a(href="../faq") 常見問題
+          nav
+            ul.footer__link
+              li
+                a(href="../") 首頁
+              li
+                a(href="../product-sunglasses") 系列鏡框
+              li
+                a(href="../location") 門市據點
+              li
+                a(href="../blog") 部落格
+              li
+                a(href="../faq") 常見問題
 
           ul.footer__contact
             li
-              a(href="tel:+886-800-000-000")
-                img(src="../assets/images/icon-phone.svg", alt="")
+              a.u-en(href="tel:+886-800-000-000")
+                i.fas.fa-phone-alt
                 | 0800-000-000
             li
-              a(href="mailto:glasses@business.com")
-                img(src="../assets/images/icon-mail.svg", alt="")
+              a.u-en(href="mailto:glasses@business.com")
+                i.far.fa-envelope
                 | glasses@business.com
 
         ul.footer__sns
           li
             a(href="https://www.facebook.com/" target="_blank")
-              img(src="../assets/images/icon-fb.svg", alt="")
+              i.fab.fa-facebook
           li
             a(href="https://www.instagram.com/" target="_blank")
-              img(src="../assets/images/icon-ig.svg", alt="")
+              i.fab.fa-instagram
           li
             a(href="https://line.me/" target="_blank")
-              img(src="../assets/images/icon-line.svg", alt="")
+              i.fab.fa-line
 
 
         .footer__others
           .copyright
             a.footer__logo(href="../")
               img(src="../assets/images/logo.png", alt="")
-            small Copyright © 2020 Glasses.All rights reserved.
+            small.u-en Copyright © 2020 Glasses.All rights reserved.
           ul.policy
             li
               a(href="../privacy") 隱私權政策

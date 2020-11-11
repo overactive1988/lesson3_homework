@@ -73,3 +73,30 @@ a {
 .black__color {
   color: #000;
 }
+/* font awesome */
+
+.fab,
+.fas,
+.far {
+  &.fa-facebook,
+  &.fa-instagram,
+  &.fa-line {
+    font-size: 4.8rem;
+    @media (--sptb) {
+      font-size: 2.4rem;
+    }
+  }
+  &.fa-phone-alt,
+  &.fa-envelope {
+    margin-right: 2rem;
+    font-size: 4.8rem;
+    @media (--tb) {
+      margin-right: 1.5rem;
+      font-size: 2.8rem;
+    }
+    @media (--sp) {
+      margin-right: 0.4rem;
+      font-size: 2rem;
+    }
+  }
+}
