@@ -4,25 +4,219 @@
 .blog__header {
   padding: 1.2rem 0 1.4rem;
   color: #fff;
+  @media (--sp) {
+    display: none;
+  }
   background: var(--color-primary-dark);
   & nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }
 .blog__nav {
   display: flex;
   font-size: 2rem;
+  @media (--tb) {
+    font-size: 1.6rem;
+  }
   & li {
     padding-right: 4.8rem;
+    @media (--tb) {
+      padding-right: 3.2rem;
+    }
     &:last-child {
       padding-right: 0;
     }
   }
 }
 .blog__search {
+  display: flex;
+  &:hover {
+    & input {
+      opacity: 1;
+    }
+  }
+  & input {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
   & button {
     background: transparent;
     border: none;
+    cursor: pointer;
+  }
+}
+
+.blog__wrap {
+  padding-top: 8.2rem;
+  padding-bottom: 15.6rem;
+  @media (--tb) {
+    padding-top: 4rem;
+    padding-bottom: 10.4rem;
+  }
+  @media (--sp) {
+    padding-top: 3.2rem;
+    padding-bottom: 5.6rem;
+  }
+}
+.blog__list {
+  padding-bottom: 4rem;
+  @media (--tb) {
+    padding-bottom: 7.2rem;
+  }
+  @media (--sp) {
+    padding-bottom: 1.3rem;
+  }
+}
+.blog__item {
+  padding-bottom: 6rem;
+  @media (--tb) {
+    padding-bottom: 3.2rem;
+  }
+  @media (--sp) {
+    padding-bottom: 2.6rem;
+  }
+  & a {
+    display: flex;
+    color: #000;
+    @media (--sp) {
+      display: block;
+    }
+  }
+}
+.blog__img {
+  flex: 1 1 55%;
+  height: 400px;
+  @media (--sptb) {
+    flex: 1 1 45%;
+    height: 192px;
+  }
+}
+.blog__img--01 {
+  background: url(../images/blog/blog01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.blog__img--02 {
+  background: url(../images/blog/blog02.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.blog__img--03 {
+  background: url(../images/blog/blog03.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.blog__img--04 {
+  background: url(../images/blog/blog04.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.blog__img--05 {
+  background: url(../images/blog/blog05.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.blog__card {
+  position: relative;
+  flex: 1 1 45%;
+  padding-left: 3rem;
+  @media (--tb) {
+    padding-right: 0.8rem;
+  }
+  @media (--sp) {
+    padding-top: 0.8rem;
+    padding-left: 0;
+  }
+}
+.blog__card__title {
+  padding-bottom: 2.4rem;
+  @media (--tb) {
+    padding-bottom: 1.6rem;
+  }
+  @media (--sp) {
+    padding-bottom: 0;
+  }
+  & h2 {
+    color: #650300;
+    font-size: 3.2rem;
+    line-height: 1.4;
+    @media (--tb) {
+      font-size: 2rem;
+    }
+    @media (--sp) {
+      font-size: 1.6rem;
+    }
+  }
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 2rem;
+    @media (--tb) {
+      font-size: 1.6rem;
+    }
+    @media (--sp) {
+      font-size: 1.4rem;
+    }
+  }
+  & time {
+    font-size: 1.6rem;
+    opacity: 0.7;
+    @media (--sptb) {
+      font-size: 1.4rem;
+    }
+  }
+}
+.blog__card__body {
+  color: #555555;
+  font-size: 2rem;
+  @media (--tb) {
+    font-size: 1.4rem;
+  }
+  @media (--sp) {
+    display: none;
+  }
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #650300;
+    font-weight: bold;
+    font-size: 3.6rem;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    content: "more";
+    @media (--tb) {
+      display: none;
+    }
+  }
+  & p {
+    position: relative;
+    font-feature-settings: "palt";
+    &::after {
+      top: 1.3em;
+      right: 0;
+      width: 1em;
+      padding-left: 0.1em;
+      line-height: 1.3em;
+      content: "……";
+      @media (--tb) {
+        color: #555555;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-transform: lowercase;
+        background-color: #fff;
+        content: "……more";
+      }
+    }
   }
 }
