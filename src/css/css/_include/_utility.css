@@ -17,3 +17,21 @@
 .u-en {
   font-family: Roboto, sans-serif;
 }
+.u-prev {
+  @media (--tb) {
+    width: 20px;
+  }
+  @media (--sp) {
+    width: 16px;
+  }
+}
+.u-next {
+  order: 2;
+  @media (--tb) {
+    width: 20px;
+  }
+  @media (--sp) {
+    order: 0;
+    width: 16px;
+  }
+}

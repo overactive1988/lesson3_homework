@@ -1,0 +1,125 @@
+extends /_include/_layout-base--2nd.pug
+
+
+block var
+  -
+    var page = {
+      url : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week03/blog/example01',
+      title : '第三週 - RWD 網站 Blog example01 | leolee',
+      description : 'Blog example01',
+      keywords : '',
+      htmlClass: '',
+      ogp: {
+        image : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week03/assets/images/og_image.jpg'
+      },
+    };
+
+
+block append css
+block content
+    main.blog
+      .blog__header
+        nav.container
+          h1.blog__title 部落格主頁
+          ul.blog__nav
+            li
+              a(href="#") 最新消息
+            li
+              a(href="#") 特別企劃
+            li
+              a(href="#") 新品上市
+            li
+              a(href="#") 鏡框小知識
+          .blog__search
+            input(type="text")
+            button
+              span
+                img(src="../../assets/images/blog/icon-search.svg", alt="")
+
+      .breadcrumb
+        .container
+          .breadcrumb_inner
+            ul
+              li
+                a(href="../../")
+                  span 首頁
+              li
+                a(href="../")
+                  span 部落格
+              li
+                a(href="#")
+                  span 特別企劃
+              li.current
+                span 情人特別企劃
+
+      .blog--contents
+        .container
+
+          .blog--contents__wrap
+            section.contents__main
+              .contents__head
+                ul.tags__item.u-en
+                  li
+                    a(href="#") #special
+                  li
+                    a(href="#") #event
+                .blog__card__title
+                  h2 情人特別企劃
+                    span.u-en 2020 Valentine’s Special<br> #[time 2020/02/14]
+              .contents__body
+                img(src="../../assets/images/blog/contents01.png", alt="")
+                p 一年一度西洋情人節即將到來，<br>我們推出最強「情人節企劃」，<br>為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品， 結合彼此喜好、找出合適框型款式，<br>在這個春夏<br>輕鬆搭出屬於你們的甜蜜默契！
+                img(src="../../assets/images/blog/contents02.png", alt="")
+                p 一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品， 結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+                img(src="../../assets/images/blog/contents03.png", alt="")
+                p 一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品， 結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+                img(src="../../assets/images/blog/contents04.jpg", alt="")
+                p 2/14(五)-2/20(日)<br>至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br>期間優惠還有~~持他牌鏡框更換鏡片<br>薄型非球面鏡片折300元<br>濾藍光鏡片折500元<br><br>快快帶上另一半<br>讓彼此每一次睜開眼，都被愛的視線包圍!
+              .contents__footer
+                .share
+                  p.u-en Share
+                    a(href="#", targer="_blank")
+                      i.fab.fa-facebook-square
+                    a(href="#", targer="_blank")
+                      i.fab.fa-instagram
+                .contents__pagenation
+                  ul
+                    li
+                      a(href="#")
+                        img.u-prev(src="../../assets/images/blog/arrow-undo-outline.svg", alt="")
+                        span 上一篇：街頭潮人訪問 1
+                    li
+                      a(href="#")
+                        img.u-next(src="../../assets/images/blog/arrow-redo-outline.svg", alt="")
+                        span 下一篇：街頭潮人訪問 2
+
+            aside.tags.u-en
+              .tags__title
+                img(src="../../assets/images/blog/icon-tag.svg" alt="")
+                p TAGS
+              ul.tags__item
+                li
+                  a(href="#") #special
+                li
+                  a(href="#") #sale
+                li
+                  a(href="#") #new_item
+                li
+                  a(href="#") #interview
+                li
+                  a(href="#") #trivia
+                li
+                  a(href="#") #news
+                li
+                  a(href="#") #event
+
+          .contents__pagenation
+            ul
+              li
+                a(href="#")
+                  img.u-prev(src="../../assets/images/blog/arrow-undo-outline.svg", alt="")
+                  span 上一篇：街頭潮人訪問 1
+              li
+                a(href="#")
+                  img.u-next(src="../../assets/images/blog/arrow-redo-outline.svg", alt="")
+                  span 下一篇：街頭潮人訪問 2

@@ -145,7 +145,7 @@
     padding-bottom: 0;
   }
   & h2 {
-    color: #650300;
+    color: var(--color-primary-dark);
     font-size: 3.2rem;
     line-height: 1.4;
     @media (--tb) {
@@ -189,7 +189,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    color: #650300;
+    color: var(--color-primary-dark);
     font-weight: bold;
     font-size: 3.6rem;
     font-family: Roboto, sans-serif;
@@ -218,5 +218,239 @@
         content: "……more";
       }
     }
+  }
+}
+
+.breadcrumb_inner {
+  padding-top: 0.8rem;
+  & ul {
+    display: inline-flex;
+    font-size: 1.6rem;
+    @media (--sptb) {
+      font-size: 1.4rem;
+    }
+  }
+  & li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::after {
+      padding: 0 1rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+      content: "/";
+    }
+  }
+  & a {
+    color: #000;
+  }
+}
+.current {
+  color: var(--color-primary);
+  &::after {
+    display: none;
+  }
+}
+.blog--contents__wrap {
+  display: flex;
+  padding-top: 1.7rem;
+  @media (--tb) {
+    padding-top: 0.8rem;
+  }
+  @media (--sp) {
+    display: block;
+    padding-top: 0.6rem;
+    padding-bottom: 5.6rem;
+  }
+}
+.contents__head {
+  & h2 {
+    color: #000;
+    font-size: 4.8rem;
+    @media (--tb) {
+      font-size: 3.2rem;
+    }
+    @media (--sp) {
+      color: var(--color-primary);
+      font-size: 2rem;
+    }
+  }
+  & span {
+    font-size: 2.8rem;
+    @media (--sp) {
+      font-size: 1.4rem;
+    }
+  }
+  & .blog__card__title {
+    padding-bottom: 1.9rem;
+  }
+}
+
+.contents__main {
+  flex: 1 1 74.3%;
+  @media (--tb) {
+  }
+}
+.contents__body {
+  & p {
+    padding-top: 2.4rem;
+    padding-bottom: 3.6rem;
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 0.7;
+    @media (--sptb) {
+      padding-top: 1.6rem;
+      padding-bottom: 2.4rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+.tags {
+  flex: 1 1 25.6%;
+  padding-left: 3rem;
+  @media (--sp) {
+    width: 300px;
+    padding-left: 0;
+    & .tags__item li {
+      padding-right: 0.8rem;
+    }
+    & .tags__item a {
+      font-size: 1.6rem;
+    }
+  }
+}
+.tags__title {
+  display: flex;
+  align-items: center;
+  color: #aa0601;
+  font-weight: bold;
+  font-size: 2.8rem;
+  @media (--sptb) {
+    font-size: 2rem;
+    & img {
+      width: 24px;
+    }
+  }
+  & p {
+    padding-left: 0.8rem;
+  }
+}
+.tags__item {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  & li {
+    padding-right: 2.4rem;
+    @media (--tb) {
+      padding-right: 1.6rem;
+    }
+    @media (--sp) {
+      padding-right: 0.4rem;
+      &:nth-child(3) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+      &:nth-child(5) {
+        order: 1;
+      }
+      &:nth-child(6) {
+        order: 0;
+      }
+      &:nth-child(7) {
+        order: 2;
+      }
+    }
+  }
+  & a {
+    position: relative;
+    margin-bottom: 1.8rem;
+    color: #aa0601;
+    font-size: 2.4rem;
+    @media (--tb) {
+      font-size: 1.6rem;
+    }
+    @media (--sp) {
+      font-size: 1.4rem;
+    }
+  }
+}
+.contents__footer {
+  & .contents__pagenation {
+    display: none;
+    @media (--sp) {
+      display: block;
+      padding-top: 0.8rem;
+      padding-bottom: 3.9rem;
+    }
+  }
+}
+.share {
+  display: flex;
+  padding-bottom: 1.6rem;
+  font-weight: 700;
+  & p {
+    display: flex;
+    font-size: 2rem;
+    @media (--sptb) {
+      font-size: 1.6rem;
+    }
+  }
+  & i.fab {
+    color: #000;
+    font-size: 2.4rem;
+    @media (--sptb) {
+      font-size: 2rem;
+    }
+  }
+  & a {
+    display: flex;
+    align-items: center;
+    margin-left: 1.6rem;
+  }
+}
+.contents__pagenation {
+  width: calc(100% - 25.6%);
+  padding-top: 2.4rem;
+  padding-bottom: 30.4rem;
+  border-top: 1px solid #707070;
+  @media (--tb) {
+    padding-bottom: 10.4rem;
+  }
+  @media (--sptb) {
+    width: 100%;
+  }
+  @media (--sp) {
+    display: none;
+  }
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    @media (--sp) {
+      display: block;
+    }
+  }
+  & li {
+    @media (--sp) {
+      padding-bottom: 0.8rem;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  & a {
+    display: flex;
+    color: #000;
+    font-size: 1.9rem;
+    @media (--tb) {
+      font-size: 1.6rem;
+    }
+    @media (--sp) {
+      font-size: 1.4rem;
+    }
+  }
+  & span {
+    padding: 0 0.8rem;
   }
 }
