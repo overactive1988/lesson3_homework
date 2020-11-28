@@ -32,13 +32,13 @@
     <main class="location">
       <div class="topbanner__mv">
         <div class="container">
-          <div class="topbanner__title">
+          <div class="topbanner__title" data-aos="fade-in">
             <h1>門市據點<img src="../assets/images/location/icon-location.svg" alt=""></h1>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="location__select"><span>選擇地區</span>
+        <div class="location__select" data-aos="fade-left" data-aos-delay="200"><span>選擇地區</span>
           <select id="zone" name="zone">
             <option value="" disabled selected>請選擇地區</option>
             <option value="台北市">台北市</option>
@@ -51,7 +51,7 @@
       <section class="location__main" id="taipei">
         <div class="container">
           <ul class="location__main__list">
-            <li class="location__main__item"><span class="location__img locate01"></span>
+            <li class="location__main__item" data-aos="fade-left" data-aos-delay="400"><span class="location__img locate01"></span>
               <div class="location__card">
                 <h2>台北中山旗艦店</h2>
                 <div class="card__detail">
@@ -62,7 +62,7 @@
               </div>
               <div class="detail__btn"><a href="./example01">詳細資訊</a></div>
             </li>
-            <li class="location__main__item"><span class="location__img locate02"></span>
+            <li class="location__main__item" data-aos="fade-left" data-aos-delay="500"><span class="location__img locate02"></span>
               <div class="location__card">
                 <h2>台北中山旗艦店</h2>
                 <div class="card__detail">
@@ -73,7 +73,7 @@
               </div>
               <div class="detail__btn"><a href="./example01">詳細資訊</a></div>
             </li>
-            <li class="location__main__item"><span class="location__img locate03"></span>
+            <li class="location__main__item" data-aos="fade-left" data-aos-delay="600"><span class="location__img locate03"></span>
               <div class="location__card">
                 <h2>台北中山旗艦店</h2>
                 <div class="card__detail">
@@ -84,7 +84,7 @@
               </div>
               <div class="detail__btn"><a href="./example01">詳細資訊</a></div>
             </li>
-            <li class="location__main__item"><span class="location__img locate04"></span>
+            <li class="location__main__item" data-aos="fade-left" data-aos-delay="700"><span class="location__img locate04"></span>
               <div class="location__card">
                 <h2>台北中山旗艦店</h2>
                 <div class="card__detail">
@@ -95,7 +95,7 @@
               </div>
               <div class="detail__btn"><a href="./example01">詳細資訊</a></div>
             </li>
-            <li class="location__main__item"><span class="location__img locate05"></span>
+            <li class="location__main__item" data-aos="fade-left" data-aos-delay="800"><span class="location__img locate05"></span>
               <div class="location__card">
                 <h2>台北中山旗艦店</h2>
                 <div class="card__detail">
@@ -141,5 +141,8 @@
         </div>
       </div>
     </footer>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

@@ -143,6 +143,7 @@
   }
   & a {
     display: flex;
+    width: 100%;
     @media (--tb) {
       flex-direction: row;
     }

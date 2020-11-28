@@ -209,7 +209,8 @@ a:hover{
 .container{
   max-width:1150px;
   margin:0 auto;
-  padding:0 2rem
+  padding:0 2rem;
+  overflow:hidden
 }
 .bg-primary{
   background:#aa0601;
@@ -478,7 +479,8 @@ a:hover{
     display:-webkit-box;
     display:-webkit-flex;
     display:-ms-flexbox;
-    display:flex
+    display:flex;
+    width:100%
   }
 .classic__item h3{
     display:-webkit-box;
@@ -715,6 +717,9 @@ a:hover{
       -o-transition:0.3s opacity;
       transition:0.3s opacity;
     }
+.product{
+  overflow:hidden
+}
 .product .svg__diamond .a, .product .svg__sun .a, .product .svg__thunder .a{
       fill:#000
     }

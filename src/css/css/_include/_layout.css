@@ -47,6 +47,7 @@ a {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 2rem;
+  overflow: hidden;
   @media (--tb) {
     padding: 0 3.9rem;
   }

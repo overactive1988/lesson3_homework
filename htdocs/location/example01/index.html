@@ -30,13 +30,13 @@
     <main class="location">
       <div class="topbanner__mv">
         <div class="container">
-          <div class="topbanner__title">
+          <div class="topbanner__title" data-aos="fade-in">
             <h1>門市據點<img src="../../assets/images/location/icon-location.svg" alt=""></h1>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="location__select"><span>選擇分店</span>
+        <div class="location__select" data-aos="fade-left" data-aos-delay="200"><span>選擇分店</span>
           <select id="branch" name="branch">
             <option value="" disabled selected>請選擇分店</option>
             <option value="台北中山旗艦店">台北中山旗艦店</option>
@@ -49,7 +49,7 @@
       <section class="location__branch" id="taipei--shop01">
         <div class="container">
           <div class="location__branch__wrap">
-            <div class="location__main__item"><span class="location__img locate01"></span>
+            <div class="location__main__item" data-aos="fade-left" data-aos-delay="400"><span class="location__img locate01"></span>
               <div class="location__card">
                 <h2>台北中山旗艦店</h2>
                 <div class="card__detail">
@@ -59,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <div class="location__map">
+            <div class="location__map" data-aos="fade-left" data-aos-delay="600">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.465378238844!2d121.53571001537902!3d25.05221114371426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf93d4d97b%3A0xa1e26471ae5697b8!2zMTA0OTHlj7DngaPlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2sjp!4v1604850598074!5m2!1szh-TW!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
               </iframe>
             </div>
@@ -98,5 +98,8 @@
         </div>
       </div>
     </footer>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>
